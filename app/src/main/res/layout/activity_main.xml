@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorSecondary"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/wordDisplay"
+        android:textColor="@color/colorSecondary"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/guessText"
+        android:maxLength="1"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorSecondary"
+        android:textColorHint="@color/colorSecondary"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Input one letter"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/lettersTried"
+        android:textColor="@color/colorSecondary"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/triesLeft"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorSecondary"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:onClick="resetGame"
+        android:text="Reset"/>
+
+
+</LinearLayout>
